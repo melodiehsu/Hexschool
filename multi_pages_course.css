@@ -1,0 +1,317 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.tabmenu {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabmenu .logo {
+  height: 36px;
+  width: 182px;
+  background-image: url(./多頁式作業＿images/logo.png);
+  margin: 20px;
+}
+.tabmenu .logo h1 {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tabmenu ul {
+  display: flex;
+}
+.tabmenu li a {
+  text-decoration: none;
+  margin: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tabmenu li a:hover {
+  color: #00cc99;
+  border-bottom: 7px solid #00cc99;
+}
+
+.banner {
+  background-image: url(./多頁式作業＿images/bg_course.png);
+  background-repeat: no-repeat;
+  height: 560px;
+  max-width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.banner h1 {
+  color: #00cc99;
+  font-size: 50px;
+  margin-left: 20px;
+  padding-top: 130px;
+}
+.banner h1 span {
+  color: #ffffff;
+}
+.banner h2 {
+  color: #00cc99;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.banner button {
+  background-color: #00cc99;
+  color: #ffffff;
+  border-style: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.banner .html5 {
+  background-image: url(./多頁式作業＿images/html.png);
+  height: 140px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.banner .css3 {
+  background-image: url(./多頁式作業＿images/CSS.png);
+  height: 140px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+
+.teacher {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.teacher .photo {
+  background-image: url(./多頁式作業＿images/teacher.png);
+  width: 230px;
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.teacher .profile {
+  font-size: 30px;
+}
+.teacher .profile p {
+  margin-bottom: 10px;
+}
+.teacher .profile span {
+  color: #00cc99;
+}
+.teacher .experience {
+  margin-top: 50px;
+}
+.teacher li {
+  color: #9b9b9b;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.course {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.course ol {
+  list-style: decimal;
+  padding-top: 30px;
+}
+.course ol li {
+  font-variant-numeric: tabular-nums;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  line-height: 1.5;
+  color: #323223;
+}
+.course .subject {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+.course .subject h2 {
+  color: #00cc99;
+  font-size: 35px;
+}
+.course .subject p {
+  color: #9b9b9b;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.table {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.table .title {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.table .title h2 {
+  color: #00cc99;
+  font-size: 35px;
+}
+.table .title p {
+  color: #9b9b9b;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.table table {
+  width: 100%;
+  margin-bottom: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.table table td {
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.table tr:nth-child(odd) {
+  background-color: #ebebeb;
+}
+.table tr:nth-child(even) {
+  color: #9b9b9b;
+}
+
+.newstudent {
+  width: 100%;
+  background-color: #ebebeb;
+}
+.newstudent .form {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+}
+.newstudent .form .content {
+  width: 40%;
+  font-size: 25px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  line-height: 1.8;
+}
+.newstudent .form button {
+  background-color: #00cc99;
+  color: #ffffff;
+  border-style: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.footerbackground {
+  width: 100%;
+  background-color: #323228;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footerbackground .footer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerbackground .footer .footerlogo {
+  height: 63px;
+  width: 180px;
+  object-fit: contain;
+  background-image: url(./多頁式作業＿images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.footerbackground .footer .footerlogo p {
+  color: #9b9b9b;
+  position: absolute;
+  right: 2%;
+  bottom: -3%;
+  font-size: 16px;
+}
+.footerbackground .footer .botmenu {
+  width: 15%;
+}
+.footerbackground .footer .botmenu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

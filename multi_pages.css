@@ -1,0 +1,343 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+.tabmenu {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabmenu .logo {
+  height: 36px;
+  width: 182px;
+  background-image: url(./多頁式作業＿images/logo.png);
+  margin: 20px;
+}
+.tabmenu .logo h1 {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tabmenu ul {
+  display: flex;
+}
+.tabmenu li a {
+  text-decoration: none;
+  margin: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tabmenu li a:hover {
+  color: #00cc99;
+  border-bottom: 7px solid #00cc99;
+}
+
+.banner {
+  background-image: url(./多頁式作業＿images/bg_index.png);
+  background-repeat: no-repeat;
+  height: 560px;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.banner h1, .banner h2 {
+  color: #00cc99;
+  font-size: 50px;
+  margin-left: 20px;
+}
+.banner h1 span, .banner h2 span {
+  color: #ffffff;
+}
+.banner h1 {
+  padding-top: 130px;
+}
+.banner h2 {
+  padding-top: 20px;
+}
+.banner button {
+  background-color: #00cc99;
+  color: #ffffff;
+  border-style: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.intro .title h2, .intro .title p {
+  display: inline;
+}
+.intro .title h2 {
+  color: #00cc99;
+  font-size: 30px;
+}
+.intro .title p {
+  color: #9b9b9b;
+  margin-left: 10px;
+}
+.intro button {
+  color: #00cc99;
+  background-color: #ffffff;
+  border-color: #00cc99;
+  border-radius: 5px;
+  outline-style: none;
+  border-style: solid;
+  padding: 5px 3px 5px 5px;
+  cursor: pointer;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.course h3 {
+  margin: 10px 30px;
+}
+.course p {
+  padding: 10px;
+}
+.course .course1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  box-shadow: 1px 1px 10px #d6d6d6;
+}
+.course .course1 .img1 {
+  height: 150px;
+  width: 200px;
+  background-image: url(./多頁式作業＿images/html5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.course .course2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  box-shadow: 1px 1px 10px #d6d6d6;
+}
+.course .course2 .img2 {
+  height: 150px;
+  width: 200px;
+  background-image: url(./多頁式作業＿images/rwd.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.course .course3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  box-shadow: 1px 1px 10px #d6d6d6;
+}
+.course .course3 .img3 {
+  height: 150px;
+  width: 200px;
+  background-image: url(./多頁式作業＿images/jQuery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.course .course1 h3, .course .course2 h3, .course .course3 h3 {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.course .course1 p, .course .course2 p, .course .course3 p {
+  color: #9b9b9b;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.comparison {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  align-items: flex-end;
+}
+.comparison h2 {
+  color: #00cc99;
+  font-size: 30px;
+}
+.comparison p {
+  color: #9b9b9b;
+  margin-left: 10px;
+}
+
+.table {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 50px;
+}
+.table table {
+  width: 100%;
+}
+.table table tr th {
+  background-color: #ebebeb;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.table table tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+.table table tr span {
+  color: #00cc99;
+}
+
+.newstudent {
+  width: 100%;
+  background-color: #ebebeb;
+}
+.newstudent .form {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+.newstudent .form .content {
+  width: 40%;
+  font-size: 25px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  line-height: 1.8;
+}
+.newstudent .form .signup {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 130px;
+  box-sizing: border-box;
+}
+.newstudent .form .signup .info {
+  width: 100%;
+  font-size: 18;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-style: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.newstudent .form .signup .submit {
+  background-color: #00cc99;
+  padding: 10px 30px;
+  outline-style: none;
+  border-style: none;
+  color: #ffffff;
+  border-radius: 5px;
+  white-space: pre;
+  cursor: pointer;
+}
+
+.footerbackground {
+  width: 100%;
+  background-color: #323228;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footerbackground .footer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerbackground .footer .footerlogo {
+  height: 63px;
+  width: 180px;
+  object-fit: contain;
+  background-image: url(./多頁式作業＿images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.footerbackground .footer .footerlogo p {
+  color: #9b9b9b;
+  position: absolute;
+  right: 2%;
+  bottom: -3%;
+  font-size: 16px;
+}
+.footerbackground .footer .botmenu {
+  width: 15%;
+}
+.footerbackground .footer .botmenu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

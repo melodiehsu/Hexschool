@@ -1,0 +1,289 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.tabmenu {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabmenu .logo {
+  height: 36px;
+  width: 182px;
+  background-image: url(./多頁式作業＿images/logo.png);
+  margin: 20px;
+}
+.tabmenu .logo h1 {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tabmenu ul {
+  display: flex;
+}
+.tabmenu li a {
+  text-decoration: none;
+  margin: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tabmenu li a:hover {
+  color: #00cc99;
+  border-bottom: 7px solid #00cc99;
+}
+
+.banner {
+  background-image: url(./多頁式作業＿images/bg_QA.png);
+  background-repeat: no-repeat;
+  height: 560px;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.banner .search {
+  padding-top: 90px;
+}
+.banner .search h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+.banner .search h2 {
+  color: #00cc99;
+  font-size: 24px;
+}
+.banner .search h1, .banner .search h2 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.searchbox input {
+  width: 50%;
+  font-size: 25px;
+  outline-style: none;
+  border-style: none;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.searchbox button {
+  background-color: #ffffff;
+  outline-style: none;
+  border-style: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.searchbox button img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+
+.FAQ {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.FAQ table {
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.FAQ table tr:nth-child(odd) {
+  color: #323223;
+  font-size: 18px;
+}
+.FAQ table tr:nth-child(even) {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+.FAQ table tr:nth-child(even) td {
+  padding-bottom: 10px;
+}
+.FAQ table ul {
+  color: #9b9b9b;
+}
+.FAQ table ul li {
+  text-indent: 10px;
+}
+.FAQ table ul li::before {
+  content: "・";
+  display: inline-block;
+  margin-right: 40px;
+}
+.FAQ table ol {
+  list-style: decimal;
+  padding-left: 60px;
+}
+.FAQ table ol li {
+  font-variant-numeric: tabular-nums;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #9b9b9b;
+  text-indent: 15px;
+}
+.FAQ table span {
+  color: #00cc99;
+}
+.FAQ table .attention {
+  font-size: 15px;
+}
+.FAQ .question {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.FAQ .question h3 {
+  color: #00cc99;
+  font-size: 35px;
+}
+.FAQ .question p {
+  color: #9b9b9b;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.questioner {
+  width: 100%;
+  background-color: #ebebeb;
+}
+.questioner .form {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.questioner .form .content {
+  width: 45%;
+  font-size: 25px;
+  line-height: 1.8;
+}
+.questioner .form .askquestion {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.questioner .form .askquestion input, .questioner .form .askquestion textarea {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+  outline-style: none;
+  border-style: none;
+  resize: none;
+  border-radius: 5px;
+}
+.questioner .form .askquestion .submit {
+  width: 25%;
+  cursor: pointer;
+  background-color: #00cc99;
+  color: #ffffff;
+  font-size: 14px;
+  white-space: pre;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.footerbackground {
+  width: 100%;
+  background-color: #323228;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footerbackground .footer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerbackground .footer .footerlogo {
+  height: 63px;
+  width: 180px;
+  object-fit: contain;
+  background-image: url(./多頁式作業＿images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.footerbackground .footer .footerlogo p {
+  color: #9b9b9b;
+  position: absolute;
+  right: 2%;
+  bottom: -3%;
+  font-size: 16px;
+}
+.footerbackground .footer .botmenu {
+  width: 15%;
+}
+.footerbackground .footer .botmenu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
